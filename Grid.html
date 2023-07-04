@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 100px 200px;
+            grid-gap:20px;
+            grid-auto-rows: 100px;
+            grid-auto-columns: 50px;
+
+        }
+
+        .items{
+            background-color: red;
+            border: 3px solid green;
+            border-radius: 3px;
+            background-image: url("hero_image.jpg");
+
+        }
+
+        .items1{
+            grid-column-start: ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"></div>
+        <div class="items">box2</div>
+        <div class="items">box3</div>
+        <div class="items">box4</div>
+        <div class="items">box5</div>
+    </div>
+</body>
+</html>
